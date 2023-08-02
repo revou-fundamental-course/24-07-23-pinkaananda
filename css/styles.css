@@ -20,7 +20,7 @@ header hr, footer hr {
 .info,.desc, .review, .buktiTesti,.package,.listPack{
     flex-direction: column;
 }
-.infoTambahan,.benefit,.firstList, .secondList, .packTitle, .listPack,.Navigation, .navButton ul,.info,.review,.desc,.testi, .buktiTesti,.footNote ul{
+.infoTambahan,.benefit,.firstList, .secondList, .packTitle, .listPack,.navigation, .navButton ul,.info,.review,.desc,.testi, .buktiTesti,.footNote ul{
     display: flex;
 }
 .contactUs, .titleForm, form, form div, .closingText, .closingArgu, .footNote{
@@ -30,12 +30,12 @@ header hr, footer hr {
 .firstList,.secondList{
     justify-content: space-evenly;
 }
-.Navigation{
+.navigation{
     align-items: center;
     justify-content: space-between;
     padding: 0 100px;
 }
-.Navigation img, .footNote img{
+.navigation img, .footNote img{
     height: 75px;
 }
 .navButton ul{
@@ -89,16 +89,16 @@ section.firstpage {
 .review{
     gap: 35px;
 }
-.slidePicture{
+.mySlider{
     display: flex;
     max-width: 550px;
     margin-top: 35px;
     justify-content: center;
 }
-.slidePicture .inactive {
+.mySlider .inactive {
     display: none;
 }
-.slidePicture img{
+.mySlider img{
     height: 300px;
     border-radius: 5px;
     align-self: auto;
@@ -277,10 +277,10 @@ form button{
 }
 
 @media only screen and (max-width: 1024px){
-    .slidePicture img {
+    .mySlider img {
         height: 350px;
     }
-    .Navigation {
+    .navigation {
         padding: 0 10px;
     }
     .firstpage{
@@ -289,7 +289,7 @@ form button{
 }
 
 @media only screen and (max-width: 768px) {
-    .Navigation {
+    .navigation {
         padding: 0 50px;
     }
     .firstpage{
@@ -311,12 +311,12 @@ form button{
     }
 }
 
-@media only screen and (max-width: 425px) {
-    .Navigation {
+@media only screen and (max-width: 600px) {
+    .navigation {
         justify-items: space-between;
         padding: 0 15px;
     }
-    .Navigation img, .footNote img {
+    .navigation img, .footNote img {
         height: 50px;
     }
     .navButton li {
@@ -329,7 +329,7 @@ form button{
     .title h5{
         font-size: 18px;
     }
-    .slidePicture img {
+    .mySlider img {
         height: 200px;
     }
     .review{
