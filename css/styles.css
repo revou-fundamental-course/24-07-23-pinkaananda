@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto sans', 'Sans serif', 'Arial';
+}
+.title h1, .buktiTesti h4, .infoTambahan p, .titleForm h1, form label, .secondpage h1, .packTitle h4{
+    color:#434e5a ;
+} 
+
+.title h5, .desc h3, .buktiTesti p, .benefit div, .benefit p, .titleForm p, .packLogo, .package p{
+    color: #8d959e;
+}
+header hr, footer hr {
+    border-top: 1px;
+}
+.benefit div, .contactUs, .packLogo, .secondpage h1 {
+    background-color: rgb(235,238,239);
+}
+.info,.desc, .review, .buktiTesti,.package,.listPack{
+    flex-direction: column;
+}
+.infoTambahan,.benefit,.firstList, .secondList, .packTitle, .listPack,.Navigation, .navButton ul,.info,.review,.desc,.testi, .buktiTesti,.footNote ul{
+    display: flex;
+}
+.contactUs, .titleForm, form, form div, .closingText, .closingArgu, .footNote{
+    display: flex;
+    flex-direction: column;
+}
+.firstList,.secondList{
+    justify-content: space-evenly;
+}
+.Navigation{
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+.Navigation img, .footNote img{
+    height: 75px;
+}
+.navButton ul{
+    border-style: solid;
+    border-width: 1px;
+    border-radius:5px ;
+    list-style: none;
+}
+.navButton a{
+    text-decoration: none;
+    color: black;
+}
+.navButton li {
+    padding: 10px 0;
+    flex: 1;
+    width: 115px;
+    text-align: center;
+}
+.navButton #middle{
+    border-style: solid;
+    border-width: 0 1px;
+}
+.title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 65px;
+    gap: 70px;
+}
+.title h1 {
+    max-width: 700px;
+    font-size: 40px;
+}
+.title h5 {
+    font-weight: lighter;
+    font-size: 20px;
+}
+section hr{
+    margin: 35px 0;
+    width: 150px;
+    border: 2px solid rgb(235,238,239);
+    align-self: center;
+}
+section.firstpage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+}
+.review{
+    gap: 35px;
+}
+.slidePicture{
+    display: flex;
+    max-width: 550px;
+    margin-top: 35px;
+    justify-content: center;
+}
+.slidePicture .inactive {
+    display: none;
+}
+.slidePicture img{
+    height: 300px;
+    border-radius: 5px;
+    align-self: auto;
+}
+.desc{
+    margin-left: 50px;
+    gap: 60px;
+}
+.desc h3{
+    font-size: 20px;
+    font-weight: lighter;
+}
+.testi{
+    gap: 25px;
+    align-items: center;
+}
+.testi img{
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+}
+.buktiTesti{
+    gap: 3px;
+}
+.buktiTesti h4{
+    font-size: 18px;
+}
+.buktiTesti p {
+    font-size: 16px;
+}
+.infoTambahan{
+    flex-direction: column;
+    gap: 35px;
+}
+.infoTambahan p{
+    max-width: 550px;
+    font-size: 20px;
+}
+.benefit{
+    align-items: center;
+    gap: 30px;
+}
+.benefit p{
+    max-width: 400px;
+}
+.benefit div, .packTitle div{ 
+    border-radius: 30px;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    flex-shrink: 0;
+}
+.benefit div{
+    padding-left:19px;  
+    padding-top:14px;
+}
+.contactUs{
+    max-height: 700px;
+    padding: 50px;
+    border-radius: 5px;
+}
+.titleForm{
+    gap: 20px;
+}
+.titleForm p {
+    max-width: 300px;
+    font-size: 15px;
+}
+form {
+    gap: 25px;
+}
+form div{
+    gap: 5px;
+}
+form label{
+    font-size: 17px;
+}
+form input, form select{
+    border-radius: 10px;
+    padding: 18px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #8d959e;
+    font-size: 16px;
+}
+form option, form select{
+    color: black;
+    background-color: white;
+}
+
+form select :invalid, option[value=""]{
+    color: grey;
+}
+form button{
+    padding: 18px 0;
+    border-radius:5px ;
+    border-style: none;
+    color: white;
+    background-color: #434e5a;
+    font-size: 16px;
+}
+.secondpage h1{
+    text-align: center;
+    padding: 100px;
+    font-size: 40px;
+}
+.secondpage hr {
+    margin: 70px 0;
+}
+.listPack{
+    margin-top: 75px;
+    margin-bottom: 125px;
+}
+.packTitle{
+    align-items: center;
+    gap: 15px;
+}
+.packTitle h4{
+    font-size: 22px;
+}
+.package p {
+    max-width: 220px;
+    margin-left: 65px;
+    margin-top: 10px;
+}
+.firstList .packTitle div{
+    padding-left: 5px;
+    padding-top: 5px;
+}
+.firstList .packLogo img{
+    height: 40px;
+    opacity: 50%;
+}
+.secondList .packTitle div{
+    padding-left: 14px;
+    padding-top: 14px;
+}
+.secondList .packLogo img{
+    height: 20px;
+    opacity: 50%;
+}
+.closingText{
+    align-items: center;
+    text-align: center;
+    gap: 75px;
+    padding: 75px 0;
+}
+.closingText .button{
+    padding: 15px 30px;
+    border-radius:5px ;
+    text-decoration: none;
+    color: white;
+    background-color: #333;
+    font-size: 16px;
+    min-width: 300px;
+}
+.closingArgu{
+    gap:35px;
+}
+.closingArgu h1{
+    font-size:  40px;
+}
+.closingArgu p{
+    max-width: 660px;
+    font-size: 18px;
+}
+.footNote{
+    align-items: center;
+}
+.footNote ul{
+    list-style: none;
+    gap: 18px;
+}
+.footNote p{
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 1024px){
+    .slidePicture img {
+        height: 350px;
+    }
+    .Navigation {
+        padding: 0 10px;
+    }
+    .firstpage{
+        gap: 100px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .Navigation {
+        padding: 0 50px;
+    }
+    .firstpage{
+        gap: 100px;
+    }
+    .desc{
+        align-items: center;
+    }
+    .infoTambahan{
+        align-items: center;
+    }
+    .infoTambahan p {
+        text-align: center;
+    }
+    .firstList, .secondList{
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .Navigation {
+        justify-items: space-between;
+        padding: 0 15px;
+    }
+    .Navigation img, .footNote img {
+        height: 50px;
+    }
+    .navButton li {
+        padding: 10px 2px;
+        width: auto;
+    }
+    .title h1, .secondpage h1, .closingArgu h1 {
+        font-size: 30px;
+    }
+    .title h5{
+        font-size: 18px;
+    }
+    .slidePicture img {
+        height: 200px;
+    }
+    .review{
+        align-items: center;
+    }
+    .desc{
+        gap: 30px;
+    }
+    .desc h3 {
+        font-size: 18px;
+    }
+    .infoTambahan p {
+        max-width: 350px;
+        font-size: 17px;
+    }
+    .closingArgu p {
+        max-width: 300px;
+        font-size: 16px;
+    }
+    .closingArgu{
+        align-items: center;
+    }
+    .benefit p{
+        max-width: 240px;
+    }
+    .footNote{
+        margin-bottom: 15px;
+    }
+}
+
