@@ -4,26 +4,26 @@
     box-sizing: border-box;
     font-family: 'Noto sans', 'Sans serif', 'Arial';
 }
-.title h1, .buktiTesti h4, .infoTambahan p, .titleForm h1, form label, .secondpage h1, .packTitle h4{
+.title h1, .isiComent h4, .infoTambahan p, .titleForm h1, form label, .middlepage h1, .packTitle h4{
     color:#434e5a ;
 } 
 
-.title h5, .desc h3, .buktiTesti p, .benefit div, .benefit p, .titleForm p, .packLogo, .package p{
+.title h5, .desc h3, .isiComent p, .benefit div, .benefit p, .titleForm p, .packLogo, .package p{
     color: #8d959e;
 }
 header hr, footer hr {
     border-top: 1px;
 }
-.benefit div, .contactUs, .packLogo, .secondpage h1 {
+.benefit div, .contactUs, .packLogo, .middlepage h1 {
     background-color: rgb(235,238,239);
 }
-.info,.desc, .review, .buktiTesti,.package,.listPack{
+.info,.desc, .review, .isiComent,.package,.listPack{
     flex-direction: column;
 }
-.infoTambahan,.benefit,.firstList, .secondList, .packTitle, .listPack,.navigation, .navButton ul,.info,.review,.desc,.testi, .buktiTesti,.footNote ul{
+.infoTambahan,.benefit,.firstList, .secondList, .packTitle, .listPack,.navigation, .navButton ul,.info,.review,.desc,.coment, .isiComent,.footer ul{
     display: flex;
 }
-.contactUs, .titleForm, form, form div, .closingText, .closingArgu, .footNote{
+.contactUs, .titleForm, form, form div, .closingText, .closingArgu, .footer{
     display: flex;
     flex-direction: column;
 }
@@ -35,7 +35,7 @@ header hr, footer hr {
     justify-content: space-between;
     padding: 0 100px;
 }
-.navigation img, .footNote img{
+.navigation img, .footer img{
     height: 75px;
 }
 .navButton ul{
@@ -80,7 +80,7 @@ section hr{
     border: 2px solid rgb(235,238,239);
     align-self: center;
 }
-section.firstpage {
+section.topPage {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -111,22 +111,22 @@ section.firstpage {
     font-size: 20px;
     font-weight: lighter;
 }
-.testi{
+.coment{
     gap: 25px;
     align-items: center;
 }
-.testi img{
+.coment img{
     height: 80px;
     width: 80px;
     border-radius: 40px;
 }
-.buktiTesti{
+.isiComent{
     gap: 3px;
 }
-.buktiTesti h4{
+.isiComent h4{
     font-size: 18px;
 }
-.buktiTesti p {
+.isiComent p {
     font-size: 16px;
 }
 .infoTambahan{
@@ -200,12 +200,12 @@ form button{
     background-color: #434e5a;
     font-size: 16px;
 }
-.secondpage h1{
+.middlepage h1{
     text-align: center;
     padding: 100px;
     font-size: 40px;
 }
-.secondpage hr {
+.middlepage hr {
     margin: 70px 0;
 }
 .listPack{
@@ -265,14 +265,14 @@ form button{
     max-width: 660px;
     font-size: 18px;
 }
-.footNote{
+.footer{
     align-items: center;
 }
-.footNote ul{
+.footer ul{
     list-style: none;
     gap: 18px;
 }
-.footNote p{
+.footer p{
     margin-top: 10px;
 }
 
@@ -283,7 +283,7 @@ form button{
     .navigation {
         padding: 0 10px;
     }
-    .firstpage{
+    .topPage{
         gap: 100px;
     }
 }
@@ -316,7 +316,7 @@ form button{
         justify-items: space-between;
         padding: 0 15px;
     }
-    .navigation img, .footNote img {
+    .navigation img, .footer img {
         height: 50px;
     }
     .navButton li {
@@ -355,7 +355,7 @@ form button{
     .benefit p{
         max-width: 240px;
     }
-    .footNote{
+    .footer{
         margin-bottom: 15px;
     }
 }

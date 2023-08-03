@@ -5,7 +5,7 @@ name.insertBefore(wrongName, inputName);
 
 inputName.addEventListener("input", (a) => {
     if(!inputName.value.match(/[A-Za-z/s]+/)) {
-        wrongName.textContent = "Tidak boleh input selain Huruf !!";
+        wrongName.textContent = "Harap untuk diisi";
         wrongName.style.cssText ='color: darkred;';
     } else {
         wrongName.textContent = "";
@@ -18,7 +18,7 @@ email.insertBefore(wrongEmail, inputEmail);
 
 inputEmail.addEventListener("input", (a) => {
     if(!inputEmail.validity.valid) {
-        wrongEmail.textContent   = "Isi email dengan benar !!";
+        wrongEmail.textContent   = "Format email salah";
         wrongEmail.style.cssText = 'color: darkred;';
     }else{
         wrongEmail.textContent = "";
@@ -32,7 +32,7 @@ interest.insertBefore(noSelection, selection);
 
 interest.addEventListener("click", (a) => {
     if(!interest.valid) {
-        noSelection.textContent = "Silahkan dipilih.";
+        noSelection.textContent = "Anda belum memilih";
         noSelection.style.cssText ='color: darkred;';
     } else{
         noSelection.textContent = "";
@@ -49,10 +49,10 @@ const form =document.querySelector('#form');
 form.addEventListener("submit", (a) => {
     a.preventDefault()
     if((inputName.value == "") || (inputEmail.value == "") || (interest.value == "")) {
-        validate.textContent = "Tolong cek kembali, masih ada yang kosong";
+        validate.textContent = "Anda belum mengisi form dengan benar";
         validate.style.cssText = 'max-width: 300px; font-size: 17px; color: darkred;';
     } else {
-        validate.textContent = "Berhasil !, tunggu email yang akan dikirimkan oleh tim kami";
+        validate.textContent = "Berhasil! tunggu email yang akan dikirimkan oleh tim kami";
         validate.style.cssText = 'max-width: 300px; font-size: 17px; color: darkgreen;';
         
         document.getElementById("name").value = "";
@@ -61,29 +61,6 @@ form.addEventListener("submit", (a) => {
         return false; 
     }
 });
-
-/*
-const submit = document.getElementById("button");
-
-submit.addEventListener("click", function(a){
-    a.preventDefault();
-    validate();
-});
-
-function validate() {
-    var name = document.getElementById("name").value;
-    var email = document.getElementById("email").value;
-
-    if (name == "" || email == "" ) {
-        alert("Tolong cek kembali, masih ada yang kosong");
-        return false;
-    }
-    alert("Berhasil !, tunggu email yang akan dikirimkan oleh tim kami");
-    //kosongin form nya
-    document.getElementById("name").value = "";
-    document.getElementById("email").value = "";
-    return false;
-} */
 
 const mySlider = document.querySelectorAll('.mySlider > img');
 
